@@ -9,9 +9,9 @@ for i in word:
     spis.append(i)
 
 for i in range(0, len(spis), num):
-        spis2 = spis[i:i + num]
-        spis2.reverse()
-        spis3.append(spis2)
+    spis2 = spis[i:i + num]
+    spis2.reverse()
+    spis3.append(spis2)
 
 for i in spis3:
     j = ''.join(i)
