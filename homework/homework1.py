@@ -42,9 +42,7 @@ else:
                                 for x in outcome_data['Дата']]
         fig, ax = plt.subplots(constrained_layout=True)
         sns.barplot(
-            data=outcome_data.loc[
-                    (outcome_data['Месяц'] == int(month))
-                    & (outcome_data['Год'] == int(year))],
+            data=outcome_data,
             y='Категория',
             x='Сумма',
             orient='h',
